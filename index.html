@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JUNLI | Authentication</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <h1 id="form-title">LOGIN</h1> 
+        <h2 id="form-subtitle">Computer System Servicing Hub</h2>
+        
+        <form id="auth-form">
+            <div id="register-fields" style="display: none;">
+                <div class="input-group">
+                    <label>Pangalan</label>
+                    <input type="text" id="name" placeholder="Juan Dela Cruz">
+                </div>
+
+                <div class="input-group input-group-dropdown">
+                    <label>Grade Level</label>
+                    <select id="grade">
+                        <option value="" disabled selected>Pumili ng Grade</option>
+                        <option value="11">Grade 11</option>
+                        <option value="12">Grade 12</option>
+                    </select>
+                </div>
+
+                <div class="input-group input-group-dropdown">
+                    <label>ICT Section</label>
+                    <select id="section">
+                        <option value="" disabled selected>Pumili ng Section</option>
+                        <option value="ICT 1">ICT 1</option>
+                        <option value="ICT 2">ICT 2</option>
+                        <option value="ICT 3">ICT 3</option>
+                        <option value="ICT 4">ICT 4</option>
+                        <option value="ICT 5">ICT 5</option>
+                        <option value="ICT 6">ICT 6</option>
+                        <option value="ICT 7">ICT 7</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label>Email Address</label>
+                <input type="email" id="email" placeholder="student@junli.ph" required>
+            </div>
+
+            <div class="input-group">
+                <label>Password</label>
+                <div class="password-wrapper">
+                    <input type="password" id="password" required placeholder="••••••••">
+                    <span id="togglePassword">SHOW</span>
+                </div>
+            </div>
+
+            <button type="submit" id="submit-btn" class="login-btn">Pumasok sa Module</button>
+        </form>
+
+        <p style="margin-top: 20px; font-size: 0.85rem; opacity: 0.8; color: white;">
+            <span id="toggle-text">Don't have an account?</span> 
+            <a href="#" id="switch-auth" style="color: #00f2fe; text-decoration: none; font-weight: 600;">Register here</a>
+        </p>
+    </div>
+
+    <div id="gui-overlay">
+        <div class="gui-content">
+            <span id="gui-icon" class="gui-icon"></span>
+            <p id="gui-msg" class="gui-msg"></p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

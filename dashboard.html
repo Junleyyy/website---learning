@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JUNLI | Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <header class="dashboard-header">
+            <h1>JUNLI</h1>
+            <p>Welcome, <span id="user-display">Student</span>!</p>
+            <small id="section-display" style="color: white; opacity: 0.7;"></small>
+        </header>
+
+        <div class="menu-grid">
+            <div class="menu-card" onclick="location.href='modules.html'">
+                <div class="icon">📚</div>
+                <h3>MODULES</h3>
+                <p>Read and earn points</p>
+            </div>
+
+            <div class="menu-card" onclick="location.href='quiz.html'">
+                <div class="icon">⚡</div>
+                <h3>CHALLENGE QUIZ</h3>
+                <p>Test your CSS skills</p>
+                </div>
+
+            <div class="menu-card" onclick="location.href='leaderboard.html'">
+                <div class="icon">🏆</div>
+                <h3>LEADERBOARD</h3>
+                <p>Top CSS Students</p>
+            </div>
+
+            <div class="menu-card" onclick="location.href='stats.html'">
+                <div class="icon">📊</div>
+                <h3>MY STATS</h3>
+                <p>View your progress</p>
+            </div>
+        </div>
+
+        <button class="logout-btn" onclick="logout()">Logout</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

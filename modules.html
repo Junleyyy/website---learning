@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JUNLI | Modules</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <header class="dashboard-header">
+            <h1>📚 MODULES</h1>
+            <p>Basahin at sagutan ang maikling quiz para sa points.</p>
+        </header>
+
+        <div class="menu-grid" id="lesson-list">
+            <div class="menu-card" onclick="openModule('Hardware Troubleshooting')">
+                <div class="icon">🔧</div>
+                <h3>Module 1</h3>
+                <p>Hardware Troubleshooting</p>
+            </div>
+            <div class="menu-card" onclick="openModule('Network Configuration')">
+                <div class="icon">🌐</div>
+                <h3>Module 2</h3>
+                <p>Network Configuration</p>
+            </div>
+        </div>
+
+        <div id="module-reader" style="display: none;">
+            <div id="module-content" style="color: white; background: rgba(0,0,0,0.2); padding: 20px; border-radius: 15px; height: 250px; overflow-y: auto; text-align: left;">
+                </div>
+
+            <div id="mini-quiz-section" style="display: none; margin-top: 20px; background: rgba(255,255,255,0.1); padding: 20px; border-radius: 15px;">
+                <h3 style="color: #00f2fe;">📝 MINI QUIZ</h3>
+                <p id="mini-question" style="color: white; margin: 10px 0;"></p>
+                <div id="mini-options"></div>
+            </div>
+
+            <div id="timer-box" style="margin-top: 20px;">
+                <p id="timer-text" style="color: white;">Mag-antay ng <span id="seconds">10</span>s para sa quiz...</p>
+            </div>
+        </div>
+
+        <button class="logout-btn" style="margin-top: 20px;" onclick="location.href='dashboard.html'">Bumalik</button>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="modules.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JUNLI | Challenge Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container" style="width: 600px;"> <div id="quiz-box">
+            <div class="quiz-header">
+                <h1 style="font-size: 1.5rem;">CHALLENGE QUIZ</h1>
+                <p id="question-number">Question 1 of 5</p>
+                <div id="score-live">Points: 0</div>
+            </div>
+
+            <hr style="margin: 20px 0; opacity: 0.2;">
+
+            <div class="question-section">
+                <h3 id="question-text" style="color: white; margin-bottom: 20px;">Loading question...</h3>
+                <div id="options-container" class="options-grid">
+                    </div>
+            </div>
+        </div>
+
+        <div id="result-box" style="display: none;">
+            <h1>QUIZ FINISHED!</h1>
+            <h2 id="final-score">You earned 0 points</h2>
+            <button class="login-btn" onclick="location.href='dashboard.html'">Back to Dashboard</button>
+        </div>
+    </div>
+
+    <div id="gui-overlay">
+    <div class="gui-content">
+        <span id="gui-icon" class="gui-icon"></span>
+        <p id="gui-msg" class="gui-msg"></p>
+    </div>
+    </div>
+
+    <script src="quiz.js"></script> </body>
+</html>
